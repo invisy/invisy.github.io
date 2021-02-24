@@ -248,7 +248,10 @@ a:hover{
 }
 
 #content{
-    padding: 6px;
+    padding: 10px;
     z-index: 1;
+	background: rgb(56, 107, 122, 0.1);
+	border-radius: 10px;
+	margin: 0 1% 0 1%;
 }
 
