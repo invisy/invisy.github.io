@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="UTF-8"> 
-<title>IA-71 labs</title>
+<title>IT-81 labs</title>
 <link rel="stylesheet" type="text/css" href="../src/colors.css">
 <link rel="stylesheet" type="text/css" href="../src/root.css"> 
 <script type="text/javascript" src="../src/script.js"></script>
@@ -18,7 +18,7 @@
 				<span class="title">Технології .Net розробки веб-додатків</span>
 			</h2>
 			<h2>
-			студентів групи ІА-71 Грицаченко Андрія та Лесика Валентина
+			студентів групи ІТ-81 Власюка Владислава, Муліша Вадима, Павленко Євгена, Форсюка Вадима
 			</h2>
 		</div>
 		<div class="topbar flex horizontal-alignment">
@@ -81,22 +81,45 @@
                 <div id="1" class="active-item">
                     <p>Опис об'єкта управління</p>
                     <p>
-                    	Об'єктом управління є електронна сиситема проходження курсів.     
-                    </p>
-                    <p>
-                    	Клієнт авторизується в системі та переходить у власний кабінет. Відповідно до рівня користувача отримує доступ до переліку курсів доступних для проходження. Після успішного завершення курсів користувач отримує можливість отримати сертифікат, як підтвердження завершення курсів. Особистий кабінет повинен містити інформацію про клієнта(яку він може редагуввати) та перелік сертифікатів, які він отримав.
-                     </p>
-                     <p>
-                     	Адміністратор повинен мати доступ до модифікації списку курсів, мати можливість модерувати користувачів застосунку.
-                     </p>
-                    <!-- <img src="4.jpg"/> -->
+						Об’єктом управління є електронна система для продажу та резервуванні
+						авіа-квитків. Він обов’язково має відповідати таким вимогам:
+					</p>
+					<p>
+						- користувач може продивитися усі доступні рейси авіакомпанії між вказаними
+						містами за вказаними датами відправлення та прибуття. Крім того, має бути
+						можливість увімкнути або вимкнути фільтр для пошуку необхідного рейсу;
+					</p>
+					<p>
+						- користувач може на будь-якому етапі виконання програми побачити ціну на
+						рейс, враховуючи клас польоту;
+					</p>
+					<p>
+						- літаки повинні мати певну кількість місць у кожному з класів
+						обслуговування, номер та тип літака;
+					</p>
+					<p>
+						- в програмі має бути організовано збереження та завантаження даних;
+					</p>
+					<p>
+						Крім того, програма має:
+					</p>
+						- працювати швидко та стабільно;
+					<p>
+						- не показувати вікон незрозумілого походження;
+					</p>
+					<p>
+						- перевіряти дані на коректність та відповідність певним критеріям;
+					</p>
+					<p>
+						- не пошкодити наявні дані при операціях з даними.
+					</p>
                 </div>
                 <div id="2" class="item">
                 	<p>Мета розробки проекту</p>
                 	<ul>
-                		<li>створення віддаленого доступу до навчальних матеріалів.</li>
-                		<li>підготовка фахівців, які необхідні компанії</li>
-                		<li>відображення процесу навчання.</li>	
+                		<li>впровадження ІС &#171;Е-продажа та резервування авіа-квитків&#187; для зручного пошуку рейсів 24/7</li>
+                		<li>пришвидшення процесу оформлення квитка</li>
+                		<li>збільшення кількості клієнтів авіакомпанії</li>	
                 	</ul>
                 </div>
                 <div id="3" class="item">
@@ -104,10 +127,9 @@
                 		Бізнес-задачі
                 	</p>
                 	<ul>
-                		<li>Пошук курсу</li>
-                		<li>Вибір курсу</li>
-                		<li>Проходження курсу</li>
-                		<li>Отримання сертифікату про завершення курсу</li>
+                		<li>Пошук рейсів за напрямом та датою</li>
+						<li>Обрання рейсу, класу польоту та місця</li>
+                		<li>Бронювання місця</li>
                 	</ul>
                 </div>
                 <div id="4" class="item">
@@ -115,11 +137,13 @@
                 		Бізнес-процеси
                 	</p>
                 	<ul>
-                		<li>Отримати список курсів</li>
-                		<li>Отримати інформацію про курс</li>
-                		<li>Обрати курс</li>
-                		<li>Отримати посилання на курс</li>
-                		<li>Отримати сертифікат</li>
+                		<li>Вказати напрям</li>
+                		<li>Вказати дату</li>
+                		<li>Обрати напрям</li>
+                		<li>Обрати дату</li>
+                		<li>Обрати літак</li>
+						<li>Обрати місце</li>
+						<li>Забронювати або купити місце</li>
                 	</ul>
                 </div>
                 <div id="5" class="item">
@@ -131,10 +155,10 @@
                 	</p>
                 	<ul>
                 		<li>1. Користувач виконує вхід до системи</li>
-                		<li>2. Обирає курс для проходження(за певною темою чи з переліку доступних курсів)</li>
-                		<li>3. Оримує посилання на курс</li>
-                		<li>4. Отримує данні про проходження курсів</li>
-                		<li>5. Отримує сертифікат, який підверджує проходження курсів</li>
+                		<li>2. Обирає рейс із списку запропонованих</li>
+                		<li>3. Обирає клас польоту</li>
+                		<li>4. Обирає місце в залежності від обраного класу</li>
+                		<li>5. Оплачує квиток та отримує його</li>
                 	</ul>
 
                 	<p>
@@ -143,19 +167,528 @@
                 	<ul>
                 		<li>1. Адміністратор виконує вхід до системи</li>
                 		<li>2. Отримує доступ до бази даних</li>
-                		<li>2.1. Працює із даними користувачів</li>
-                		<li>2.2. Працює із даними курсів</li>
-                		<li>3. Підверджує впроваджені зміни</
+                		<li>3  Працює із даними аеропорту</li>
+                		<li>4. Підверджує впроваджені зміни</
                 	</ul>
                 </div>
                 <div id="6" class="item">
                 	<p>Таблиця обґрунтування класів</p>
-                	<img src="../src/img/class.jpg" width="80%" height="80%" />
-                	<p>Але потрібно зауважити, що система потребує додаткові класи для збереження даних, які будуть реалізовуватися у вигляді дата-класів, що згодом будуть взаємодіяти з базою даних, тому результуюча діаграма класів матиме більше класів, ніж це зазначено при об’єктно-орієнтованій декомпозиції.</p>
+                	<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    <strong>ІМЕННИК</strong>
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    <strong>ВІДНОШЕННЯ ДО </strong>
+                    <strong>OOA</strong>
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    <strong>ПОЯСНЕННЯ</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Аеропорт
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Надає сервіс аеропорту
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Літак
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Інформація про літак
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Рейс
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Інформація про рейс
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас польоту
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Економ, бізнес, т.д.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Місто
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Інформація про місто
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Квиток
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Інформація про рейс та пасажира, показує остаточну вартість
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Людина
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клієнт авіакомпанії
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Місце
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Клас
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Інформація про місце
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Ідентифікатор
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Прізвище людини
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Ім’я людини
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Ім’я людини
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Прізвище людини
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Прізвище людини
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Вік людини
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Вік пасажира
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Номер паспорту
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Номер паспорту пасажира
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Назва міста
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    назва міста (в класі Місто)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Назва літака
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    назва літака
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Місто відправлення
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    місто відправлення в рейсі
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Місто прибуття
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    місто прибуття в рейсі
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Дата відправлення
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    дата відправлення
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Дата прибуття
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    дата прибуття
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Ціна рейсу
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    ціна за конкретний рейс
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="232" valign="top">
+                <p align="center">
+                    Місця у літаку
+                </p>
+            </td>
+            <td width="232" valign="top">
+                <p align="center">
+                    Атрибут
+                </p>
+            </td>
+            <td width="232" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+                	<p>Але потрібно зауважити, що система потребує додаткові класи для збереження даних, які будуть реалізовуватися у вигляді дата-класів, що згодом будуть взаємодіяти з базою даних, також систему може бути розширено, тому результуюча діаграма класів матиме більше класів, ніж це зазначено при об’єктно-орієнтованій декомпозиції.</p>
                 </div>
                 <div id="7" class="item">
                 <p>Таблиця обґрунтування методів</p>
-                	<img src="../src/img/method.jpg" width="80%" height="80%" />
+                	<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    <strong>ДІЄСЛОВО</strong>
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    <strong>КРИТЕРІЙ НАЛЕЖНОСТІ ДО КЛАСУ</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Купити білет
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Аеропорт
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Отримати рейси
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Аеропорт
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Отримати літаки
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Аеропорт
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Додати рейс
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Аеропорт
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Додати літак
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Аеропорт
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Знайти рейс
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Аеропорт
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Додати місця
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Літак
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Отримати клас місця за ідентифікатором
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Літак
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Порахувати кількість місць
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Літак
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="291">
+                <p align="center">
+                    Зайняти місце
+                </p>
+            </td>
+            <td width="397">
+                <p align="center">
+                    Метод класу Рейс
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
                 </div>
                 <div id="8" class="item">
                 	<p>Діаграма об'єктів</p>
@@ -170,19 +703,6 @@
                 </div>
                 <div id="10" class="item">
                 	<p>Діаграма класів</p>
-                	<p>
-                		Моделювання процесу реєстрації та навчання на курсах в ІТ-компанії
-                	Діаграма класів для проекту "Моделювання процесу реєстрації та навчання на курсах в ІТ-компанії". Було створено 7 класів та побудовані зв'язки між ними:
-                	</p>
-                	<ul>
-                		<li>User - Classroom — асоціація, так як користувач від класної кімнати не залежить</li>
-                		<li>Employee - User — наслідування, так як працівник специфікує функціонал базового користувача та розширює повноваження</li>
-                		<li>Administrator - User — наслідування, так як працівник специфікує функціонал базового користувача та розширює повноваження</li>
-                		<li>UserDatabase - User — агрегація, так як користувач може існувати без бази даних</li>
-                		<li>CourseDatabase - Course — агрегація, так як курс може існувати без бази даних</li>
-                		<li>Classroom - UserDatabase — композиція, так як класна кімната створює базу даних користувачів як невід'ємну свою частину</li>
-                		<li>Classroom - CourseDatabase — композиція, так як класна кімната створює базу даних курсів як невід'ємну свою частину</li>
-                	</ul>
                 	<img src="../src/img/photo_2021-02-17_22-45-26.jpg" width="80%" height="80%" />
                 </div>
                 <div id="11" class="item">Висновок</div>
