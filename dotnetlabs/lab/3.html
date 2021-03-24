@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="UTF-8"> 
-<title>Something strange</title>
+<title>IТ-81 labs</title>
 <link rel="stylesheet" type="text/css" href="../src/colors.css">
 <link rel="stylesheet" type="text/css" href="../src/root.css"> 
 <script type="text/javascript" src="../src/script.js"></script>
@@ -36,69 +36,876 @@
 		<div class="main">
             <div id="menu">
             	<div class="dropdown">
-                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
+                	<a class="menu-item flex " onclick="ChangeTab(this, '1')">1 Тема, мета та постановка задачі лабораторної роботи №2.</a>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">2 Проектування ПЗ</a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">2.1  Проектування структури ПЗ  - UML-діаграма класів</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">2.2  Таблиця класів</a>
                		</div>
                 </div>
                 <div class="dropdown">
-                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
+                	<a class="menu-item flex">3. Кодування (програмування)  </a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця обґрунтування класів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця обґрунтування методів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника - UML-діаграми</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">3. Проектування ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">3.1 Файлова структура проекту</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '5')">3.2 Програмні коди класів з властивостями та автовластивостями</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '6')">3.3 Програмний код класу Program</a>
       
                		</div>
                 </div>
                 <div class="dropdown">
-                	<a class="menu-item flex">4. Кодування (програмування)</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
+                	<a class="menu-item flex">4. Впровадження та супроводження ПЗ</a>
+               	  	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">5.1. Папка з проектом</a>
                		</div>
                 </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '1')">5.1. Папка з проектом</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">5.2. Запуск ехе-файла</a>
-               		</div>
+				<div class="dropdown">
+                	<a class="menu-item flex " onclick="ChangeTab(this, '8')">5. Висновки</a>
                 </div>
             </div>
     
             <div id="content">
                 <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
+                    <p style="margin: 0px  0px 0px 40px">Тема: ВИКОРИСТАННЯ ВЛАСТИВОСТЕЙ.  АВТОМАТИЧНІ ВЛАСТИВОСТІ. СКОРОЧЕНИЙ ЗАПИС ВЛАСТИВОСТЕЙ
+                    </p>
+                    <p style="padding: 0  0 0 40px">
+                        Мета: Здійснити введення та виведення даних закритих полів класів, застосовуючі методи-властивості.
+                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
+                    <ul style="list-style-type: none"> Постановка задачі:
+                        <li>1. Доповнити програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів. </li>
+                        <li>2. Протестувати програму, шляхом запуску програми, введенням та виведенням значень закритих полів.</li>
+                    </ul>
+					
+					<ul style="list-style-type: none">
+                        <li>Середовище розробки: JetBrains Rider</li>
+                    </ul>
+
+                    </p>
+                   
                 </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
-                <div id="4" class="item">Структура документа</div>
-                <div id="5" class="item">Висновок</div>
+                <div id="2" class="item">
+					<img src="..\src\img\uml_1.jpg">
+					</br>
+					Без класу BaseEntity (для зручності)
+					<img src="..\src\img\uml_2.jpg">
+				</div>
+                <div id="3" class="item"><div align="center">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="104" rowspan="11">
+                    <p align="center">
+                        Клас Flight
+                    </p>
+                </td>
+                <td width="302">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        DepartureCity
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Місто вильоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        IncomingCity
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Місто прильоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        DepartureDate
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Дата вильоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        IncomingDate
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Дата прильоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Price
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Ціна за квиток
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Plane
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Літак
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Seats
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Місця
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Flight(Flight flight)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор копіювання
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Flight(departureCity, incomingCity,
+                    </p>
+                    <p align="center">
+                        departureDate, incomingDate,
+                    </p>
+                    <p align="center">
+                        price, plane)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор ініц.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="104" rowspan="8">
+                    <p align="center">
+                        Клас Plane
+                    </p>
+                </td>
+                <td width="302">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Name
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Назва літака
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Model
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Модель літака
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        TotalSeats
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Кількість місць
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        TravelClasses
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Класи польоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        AddTravelClass
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Додати клас польоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Plane(name, model, totalSeats)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор ініц.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="104" rowspan="5">
+                    <p align="center">
+                        Клас City
+                    </p>
+                </td>
+                <td width="302">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Name
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Назва літака
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        City()
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор за замовч.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        City(name)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор ініц.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="104" rowspan="5">
+                    <p align="center">
+                        Клас TravelClass
+                    </p>
+                </td>
+                <td width="302">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Name
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Назва літака
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        ClassPrice
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Ціна за клас польоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        TravelClass(name, classPrice)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Додати клас польоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="104" rowspan="6">
+                    <p align="center">
+                        Клас PlaneSeat
+                    </p>
+                </td>
+                <td width="302">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Number
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Номер місця
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        TravelClassId
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        ID класу польоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        TicketId
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        ID квитка
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        PlaneSeat(number, travelClassId)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор ініц.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="104" rowspan="7">
+                    <p align="center">
+                        Клас Passenger
+                    </p>
+                </td>
+                <td width="302">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Name
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Ім’я
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Surname
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Прізвище
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Patronymic
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        По батькові
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        uniquePassportId
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Ідентифікатор паспорта
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="302">
+                    <p align="center">
+                        Passenger(name, surname,
+                    </p>
+                    <p align="center">
+                        uniquePassportId)
+                    </p>
+                </td>
+                <td width="217">
+                    <p align="center">
+                        Конструктор ініц.
+                    </p>
+                </td>
+            </tr>
+			<tr>
+                <td width="135" rowspan="7">
+                    <p align="center">
+                        Клас Ticket
+                    </p>
+                </td>
+                <td width="290">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        TotalPrice
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Назва літака
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Passenger
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Модель літака
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        SeatNumber
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Кількість місць
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Ticket(client, flight)
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Конструктор ініц.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        CalculateTotalPrice()
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Порахувати загальну ціну
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="135" rowspan="10">
+                    <p align="center">
+                        Клас BookingService
+                    </p>
+                </td>
+                <td width="290">
+                    <p align="center">
+                        Атрибути
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Planes
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Список літаків
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Cities
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Список міст
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Flights
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Список польотів
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Tickets
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Список квитків
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        TravelClasses
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Список класів польоту
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        Методи
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Опис
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        BookingService()
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Конструктор за зам.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        BuyTicket(flight, seatId,
+                    </p>
+                    <p align="center">
+                        person)
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Покупка квитка
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="290">
+                    <p align="center">
+                        SearchFlights(departureCity, incomingCity,
+                        departureDate, incomingDate)
+                    </p>
+                </td>
+                <td width="198">
+                    <p align="center">
+                        Пошук польотів
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+                <div id="4" class="item"><img src="..\src\img\projectStructure.png" style="width:350px;"></div>
+                <div id="5" class="item">
+					</br>
+					Клас BookingService
+					<img src="..\src\img\lab2\bookingService.png" style="width:800px;">
+					</br>
+					Клас City
+					<img src="..\src\img\lab2\city.png" style="width:800px;">
+					</br>
+					Клас Flight
+					<img src="..\src\img\lab2\flight.png" style="width:800px;">
+					</br>
+					Клас Passenger
+					<img src="..\src\img\lab2\passenger.png" style="width:800px;">
+					</br>
+					Клас Plane
+					<img src="..\src\img\lab2\plane.png" style="width:800px;">
+					</br>
+					Клас PlaneSeat
+					<img src="..\src\img\lab2\planeSeat.png" style="width:800px;">
+					</br>
+					Клас Ticket
+					<img src="..\src\img\lab2\ticket.png" style="width:800px;">
+					</br>
+					Клас TravelClass
+					<img src="..\src\img\lab2\travelClass.png" style="width:800px;">
+					</br>
+					Результат виконання
+					<img src="..\src\img\lab3\result.png" style="width:800px;">
+				</div>
+				
+				<div id="6" class="item">
+					</br>
+					Клас Program
+					<img src="..\src\img\lab3\program.png" style="width:800px;">
+				</div>
+				
+				<div id="7" class="item">
+					</br>
+					<a href="https://github.com/invisy/.NET-Labs" style="color: black;">Посилання на гітхаб</a>
+				</div>
+					
+				<div id="8" class="item">
+					<p style="padding: 0  40px 0 40px">
+						Виконуючи дану лабораторну роботи, ми з'ясували, що властивості дозволяють приховати дані об'єктів та опосередковувати їх. Також властивості дозволяють використовувати додаткову логіку, яка може бути необхідна, наприклад, при присвоюванні змінній класу будь-якого значення. Автоматичні властивості значно спрощують написання однотипних властивостей для доступу до полів класу. Також ми навчилися застосовувати скорочений запис властивостей, який дозволяє швидко написати властивість з геттером.
+					</p>
+				</div>
+				
             </div>
         </div>
 		<div class="footer"></div>
