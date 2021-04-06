@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="UTF-8"> 
-<title>Something strange</title>
+<title>IT-81 Labs</title>
 <link rel="stylesheet" type="text/css" href="../src/colors.css">
 <link rel="stylesheet" type="text/css" href="../src/root.css"> 
 <script type="text/javascript" src="../src/script.js"></script>
@@ -36,69 +36,93 @@
 		<div class="main">
             <div id="menu">
             	<div class="dropdown">
-                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
-               		</div>
+                	<a class="menu-item flex" onclick="ChangeTab(this, '1')">1. Тема, мета та постановка задачі лабораторної роботи №4.</a>
                 </div>
                 <div class="dropdown">
-                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця обґрунтування класів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця обґрунтування методів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника - UML-діаграми</a>
-               		</div>
+                	<a class="menu-item flex" onclick="ChangeTab(this, '2')">2. Місце розташуванння проекту, середовище розробки</a>
                 </div>
                 <div class="dropdown">
-                	<a class="menu-item flex">3. Проектування ПЗ</a>
+                	<a class="menu-item flex">2. Проектування ПЗ</a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
       
                		</div>
                 </div>
                 <div class="dropdown">
                 	<a class="menu-item flex">4. Кодування (програмування)</a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">4.1. Перевантаження унарних операторів</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">4.2. Перевантаження бінарних операторів</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '6')">4.3. Перевантаження логічних операторів та операторів порівняння</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">4.4. Файлова структура проекту</a>
                		</div>
                 </div>
                 <div class="dropdown">
                 	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '1')">5.1. Папка з проектом</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">5.2. Запуск ехе-файла</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">5.1. Папка з проектом</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">5.2. Запуск ехе-файла</a>
                		</div>
+                </div>
+				<div class="dropdown">
+                	<a class="menu-item flex" onclick="ChangeTab(this, '10')">6. Висновки</a>
                 </div>
             </div>
     
             <div id="content">
                 <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
+                    <p style="margin: 0px  0px 0px 40px">Тема: ПЕРЕВАНТАЖЕННЯ УНАРНИХ, БІНАРНИХ, ЛОГІЧНИХ ОПЕРАТОРІВ,ОПЕРАТОРІВ ПОРІВНЯННЯ
+                    </p>
+                    <p style="padding: 0  0 0 40px">
+                        Мета: придбати практичні навички роботи  реалізації методів перевантаження унарних, бінарних, логічних операторів, операторів порівняння.
+                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
+						<ul style="list-style-type: none"> Постановка задачі:
+							<li>1. Доповнити програмну реалізацію класів методами для перевантаження унарних, бінарних, логічних операторів, операторів порівняння. </li>
+							<li>2. Протестувати програму. Зробити висновки.</li>
+						</ul>
+                    </p>
                 </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
-                <div id="4" class="item">Структура документа</div>
-                <div id="5" class="item">Висновок</div>
+                <div id="2" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+					<p style="padding: 0  0 0 40px">Середовище розробки: JetBrains Rider 2020</p>
+				</div>
+                <div id="3" class="item">
+					<img src="..\src\img\uml_1.jpg">
+					</br>
+					Без класу BaseEntity (для зручності)
+					<img src="..\src\img\uml_2.jpg">
+				</div>
+                <div id="4" class="item">
+					<img src="..\src\img\lab4\1.png">
+				</div>
+                <div id="5" class="item">
+					<img src="..\src\img\lab4\2.png">
+				</div>
+				<div id="6" class="item">
+					<p>Перевантаження умовного оператора</p>
+					<img src="..\src\img\lab4\3_1.png">
+					<p>Перевантаження операторів порівняння (клас Ticket)</p>
+					<img src="..\src\img\lab4\3_2.png">
+				</div>
+				<div id="7" class="item">
+					<img src="..\src\img\projectStructure.png" style="width:350px;">
+				</div>
+				<div id="8" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+				</div>
+				<div id="9" class="item">
+					<p style="padding: 0  0 0 40px;">Проект написано з використанням технології .NET 5.</p>
+					<p style="padding: 0  0 0 40px;">Для запуску необхідно скомпілювати проект з github або завантажити вже скомпільоване ПЗ з вкладки Releases проекту на гітхаб.<p>
+				</div>
+				<div id="10" class="item">
+					<p style="padding: 0 40px  0 40px;">
+						Виконуючи дану лабораторну роботи, ми навчилися перевантажувти оператори.
+						Перевантаження операторів дозволяє нам використовувати вже існуючі відомі оператори для об'єктів власних класів.
+						Варто зауважити, що не всі оператори можна перевантажувати. Є ряд операторів, які перевантажити неможливо, такі як: "=", "?:", "??", "=>" та інші (повний список можна переглянути на msdn).
+						Також ми з'ясували, що не можна змінити пріорітет оператора або його асоціативність, також не можна створити новий оператор, або змінити логіку існуючих операторів.
+					</p>
+				</div>
             </div>
         </div>
 		<div class="footer"></div>
