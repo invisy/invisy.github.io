@@ -36,13 +36,13 @@
 		<div class="main">
             <div id="menu">
             	<div class="dropdown">
-                	<a class="menu-item flex" onclick="ChangeTab(this, '1')">1. Тема, мета та постановка задачі лабораторної роботи №4.</a>
+                	<a class="menu-item flex" onclick="ChangeTab(this, '1')">1. Тема, мета та постановка задачі лабораторної роботи №5.</a>
                 </div>
                 <div class="dropdown">
                 	<a class="menu-item flex" onclick="ChangeTab(this, '2')">2. Місце розташуванння проекту, середовище розробки</a>
                 </div>
                 <div class="dropdown">
-                	<a class="menu-item flex">2. Проектування ПЗ</a>
+                	<a class="menu-item flex">3. Проектування ПЗ</a>
                	 	<div class="submenu">
                 		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
       
@@ -71,24 +71,28 @@
     
             <div id="content">
                 <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
+                    <p style="margin: 0px  0px 0px 40px">Тема: УСПАДКУВАННЯ. АБСТАКТНІ КЛАСИ. ІНТЕРФЕЙСИ
+                    </p>
+                    <p style="padding: 0  0 0 40px">
+                        Мета: придбати практичні навички роботи  створення базового та похідних класів, перевизначення методів у класі, висхідних (Upcasting)  та спадних (Downcasting) перетворень.
+                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
+						<ul style="list-style-type: none"> Постановка задачі:
+							<li>1. Доповнити програмну реалізацію (або створити окремий проект) інтерфейсами, абстрактними класами, та класами які їх наслідують. Створити приклади висхідних (Upcasting)  та спадних (Downcasting) перетворень.</li>
+							<li>2. Протестувати програму. Зробити висновки.</li>
+						</ul>
+                    </p>
                 </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
+                <div id="2" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+					<p style="padding: 0  0 0 40px">Середовище розробки: JetBrains Rider 2020</p>
+				</div>
+                <div id="3" class="item">
+					<img src="..\src\img\uml_1.jpg">
+					</br>
+					Без класу BaseEntity (для зручності)
+					<img src="..\src\img\uml_2.jpg">
+				</div>
                 <div id="4" class="item">
 					<p>Базовий клас Person</p>
 					<img src="..\src\img\lab5\1_1.png">
@@ -143,6 +147,20 @@
 					</br>
 					<p>Результат виконання коду</p>
 					<img src="..\src\img\lab5\4_5.png">
+				</div>
+				<div id="8" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+				</div>
+				<div id="9" class="item">
+					<p style="padding: 0  0 0 40px;">Проект написано з використанням технології .NET 5.</p>
+					<p style="padding: 0  0 0 40px;">Для запуску необхідно скомпілювати проект з github або завантажити вже скомпільоване ПЗ з вкладки Releases проекту на гітхаб.<p>
+				</div>
+				<div id="10" class="item">
+					<p style="padding: 0 40px  0 40px;">
+						Виконуючи дану лабораторну роботи, ми закріпили теоритичні знання а також навчилися використовувати наслідування на практиці, яке є одним з ключових моментів ООП.
+						З'ясували, що наслідування реалізує поліморфізм. Також ми використали інтерфейси, які реалізують цей принцип ООП.
+						Навчилися використувувати Upcasting та Downcasting. З'ясували, що Upcasting приводить об'єкт похідного класу до базового, а Downcasting - навпаки.
+					</p>
 				</div>
             </div>
         </div>
