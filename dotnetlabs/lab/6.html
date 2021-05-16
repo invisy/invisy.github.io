@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>IT-81 Labs</title>
+<link rel="stylesheet" type="text/css" href="../src/colors.css">
+<link rel="stylesheet" type="text/css" href="../src/root.css"> 
+<script type="text/javascript" src="../src/script.js"></script>
+</head>
+<body> 
+	<div class="wrapper">
+		<div class="header">
+			<h2>
+				Звіти з лабораторних робіт
+			</h2>
+			<h2>
+				з дисципліни 
+				<span class="title">Технології .Net розробки веб-додатків</span>
+			</h2>
+			<h2>
+			студентів групи ІТ-81 Власюка Владислава, Муліша Вадима, Павленко Євгена, Форсюка Вадима
+			</h2>
+		</div>
+		<div class="topbar flex horizontal-alignment">
+			<a class="topbar-item shadow" href="../index.html">Title</a>
+			<a class="topbar-item shadow" href="1.html">Lab 1</a>
+			<a class="topbar-item shadow" href="2.html">Lab 2</a>
+			<a class="topbar-item shadow" href="3.html">Lab 3</a>
+			<a class="topbar-item shadow" href="4.html">Lab 4</a>
+			<a class="topbar-item shadow active" href="5.html">Lab 5</a>
+			<a class="topbar-item shadow" href="6.html">Lab 6</a>
+			<a class="topbar-item shadow" href="7.html">Lab 7</a>
+			<a class="topbar-item shadow" href="8.html">Lab 8</a>
+			<a class="topbar-item shadow" href="9.html">Lab 9</a>
+		</div>
+		<div class="main">
+            <div id="menu">
+            	<div class="dropdown">
+                	<a class="menu-item flex" onclick="ChangeTab(this, '1')">1. Тема, мета та постановка задачі лабораторної роботи №6.</a>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex" onclick="ChangeTab(this, '2')">2. Місце розташуванння проекту, середовище розробки</a>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">3. Проектування ПЗ</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
+      
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">4. Кодування (програмування)</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">4.1. Делегати</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">4.2. Події</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '6')">4.3. Анонімні методи</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '7')">4.4. Лямбда-оператори.Лямбда-вирази</a>
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">5.1. Папка з проектом</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">5.2. Запуск ехе-файла</a>
+               		</div>
+                </div>
+				<div class="dropdown">
+                	<a class="menu-item flex" onclick="ChangeTab(this, '10')">6. Висновки</a>
+                </div>
+            </div>
+    
+            <div id="content">
+                <div id="1" class="active-item">
+                    <p style="margin: 0px  0px 0px 40px">Тема: ДЕЛЕГАТИ. ПОДІЇ. АНОНІМНІ МЕТОДИ.  ЛЯМБДА-ОПЕРАТОРИ. ЛЯМБДА-ВИРАЗИ
+                    </p>
+                    <p style="padding: 0  0 0 40px">
+                        Мета: придбати практичні навички роботи  створення та використання  делегатів, анонімних методи,  лямбда-операторів, лямбда-виразів.
+                    </p>
+                    <p>
+						<ul style="list-style-type: none"> Постановка задачі:
+							<li>1. Класи-делегати (мінімум три делегата).</li>
+							<li>2. Події.</li>
+							<li>3. Анонімні методи.</li>
+							<li>4. Лямбди-оператори.</li>
+							<li>5. Лямбди-вирази. </li>
+							<li>6. Протестувати програму. Зробити висновки.</li>
+						</ul>
+                    </p>
+                </div>
+                <div id="2" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+					<p style="padding: 0  0 0 40px">Середовище розробки: JetBrains Rider 2020</p>
+				</div>
+                <div id="3" class="item">
+					Наш новий проект
+					<img src="..\src\img\lab5\uml.png">
+					Основний проект
+					<img src="..\src\img\uml_1.jpg">
+					</br>
+					Без класу BaseEntity (для зручності)
+					<img src="..\src\img\uml_2.jpg">
+				</div>
+                <div id="4" class="item">
+					<p>Оголошення першого класу-делегату</p>
+					<img src="..\src\img\lab6\1_1.png">
+					</br>
+					<p>Оголошення другого класу-делегату</p>
+					<img src="..\src\img\lab6\1_3.png">
+					</br>
+					<p>Оголошення третього класу-делегату</p>
+					<img src="..\src\img\lab6\1_4.png">
+					</br>
+					<p>Використання першого класу-делегату</p>
+					<img src="..\src\img\lab6\1_2.png">
+					</br>
+					<p>Результат виконання коду</p>
+					<img src="..\src\img\lab6\1_5.png">
+				</div>
+				
+                <div id="5" class="item">
+					<p>Створення події</p>
+					<img src="..\src\img\lab6\2_1.png">
+					</br>
+					<p>Реалізація події</p>
+					<img src="..\src\img\lab6\2_2.png">
+					</br>
+					<p>Результат виконання коду</p>
+					<img src="..\src\img\lab6\2_3.png">
+				</div>
+				
+				<div id="6" class="item">
+					<p>Делегат анонімного методу</p>
+					<img src="..\src\img\lab6\3_1.png">
+					</br>
+					<p>Тіло анонімного методу</p>
+					<img src="..\src\img\lab6\3_2.png">
+					</br>
+					<p>Виклик анонімного методу</p>
+					<img src="..\src\img\lab6\3_3.png">
+					</br>
+					<p>Результат виконання коду</p>
+					<img src="..\src\img\lab6\3_4.png">
+				</div>
+				
+				<div id="7" class="item">
+					<p>Оголошення делегату для лямбда-оператора</p>
+					<img src="..\src\img\lab6\4_1.png">
+					</br>
+					<p>Лямбда-оператор</p>
+					<img src="..\src\img\lab6\4_2.png">
+					</br>
+					<p>Використання лямбда-оператора</p>
+					<img src="..\src\img\lab6\4_3.png">
+					</br>
+					<p>Оголошення делегату для лямбда-виразу</p>
+					<img src="..\src\img\lab6\4_4.png">
+					</br>
+					<p>Лямбда-вираз</p>
+					<img src="..\src\img\lab6\4_5.png">
+					</br>
+					<p>Використання лямбда-виразу</p>
+					<img src="..\src\img\lab6\4_6.png">
+					</br>
+					<p>Результат виконання коду</p>
+					<img src="..\src\img\lab6\4_7.png">
+				</div>
+				<div id="8" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+				</div>
+				<div id="9" class="item">
+					<p style="padding: 0  0 0 40px;">Проект написано з використанням технології .NET 5.</p>
+					<p style="padding: 0  0 0 40px;">Для запуску необхідно скомпілювати проект з github або завантажити вже скомпільоване ПЗ з вкладки Releases проекту на гітхаб.<p>
+				</div>
+				<div id="10" class="item">
+					<p style="padding: 0 40px  0 40px;">
+						Виконуючи дану лабораторну роботи, ми закріпили теоритичні знання а також навчилися придбати практичні навички роботи,
+						створили та використали  делегати, анонімні методи,  лямбда-оператори, лямбда-вирази.
+						За допомогою делегатів ми можемо значно скоротити код, що зробить його більш читабельним. Анонімні функції потрібно використовувати
+						для функцій, які потребують в аргумент функції зворотьного виклику.Лямбда-вирази є скороченими анонімними функціями. За допомогою них
+						можна також значно скоротити код.
+					</p>
+				</div>
+            </div>
+        </div>
+		<div class="footer"></div>
+	</div>
+</html>
