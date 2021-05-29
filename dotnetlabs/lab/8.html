@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="UTF-8"> 
-<title>Something strange</title>
+<title>IT-81 Labs</title>
 <link rel="stylesheet" type="text/css" href="../src/colors.css">
 <link rel="stylesheet" type="text/css" href="../src/root.css"> 
 <script type="text/javascript" src="../src/script.js"></script>
@@ -31,74 +31,136 @@
 			<a class="topbar-item shadow" href="6.html">Lab 6</a>
 			<a class="topbar-item shadow" href="7.html">Lab 7</a>
 			<a class="topbar-item shadow active" href="8.html">Lab 8</a>
-			<a class="topbar-item shadow" href="9.html">Lab 9</a>
 		</div>
 		<div class="main">
             <div id="menu">
             	<div class="dropdown">
-                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
+                	<a class="menu-item flex" onclick="ChangeTab(this, '1')">1. Тема, мета та постановка задачі лабораторної роботи №7.</a>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex" onclick="ChangeTab(this, '2')">2. Місце розташуванння проекту, середовище розробки</a>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">3. Кодування ПЗ (програмування)</a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">Завдання 4.1</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">Завдання 4.2</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '5')">Завдання 4.3</a>
+						<a class="submenu-item flex" onclick="ChangeTab(this, '6')">Завдання 4.4</a>
                		</div>
                 </div>
                 <div class="dropdown">
-                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
+                	<a class="menu-item flex">4. Впровадження та супроводження ПЗ</a>
                	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця обґрунтування класів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця обґрунтування методів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника - UML-діаграми</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">5.1. Папка з проектом</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">5.2. Запуск ехе-файла</a>
                		</div>
                 </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">3. Проектування ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
-      
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">4. Кодування (програмування)</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '1')">5.1. Папка з проектом</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">5.2. Запуск ехе-файла</a>
-               		</div>
+				<div class="dropdown">
+                	<a class="menu-item flex" onclick="ChangeTab(this, '9')">5. Висновки</a>
                 </div>
             </div>
     
             <div id="content">
                 <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
+                    <p style="margin: 0px  0px 0px 40px">Тема: ПОТОКИ
+                    </p>
+                    <p style="padding: 0  0 0 40px">
+                        Мета: придбати практичні навички роботи з потоками.
+                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
+						<ul style="list-style-type: none"> Постановка задачі:
+							<li>1. В окремому проекті виконати завдання пункту №3</li>
+							<li>2. Протестувати програму</li>
+							<li>3. Зробити висновки</li>
+						</ul>
+                    </p>
                 </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
-                <div id="4" class="item">Структура документа</div>
-                <div id="5" class="item">Висновок</div>
+                <div id="2" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+					<p style="padding: 0  0 0 40px">Середовище розробки: JetBrains Rider 2020</p>
+				</div>          
+                <div id="3" class="item">
+					<p>Код виконання 3 циклів в одному потоці</p>
+					<img src="..\src\img\lab8\01.jpg">
+					</br>
+					<p>Результат виконання 3 циклів в одному потоці</p>
+					<img src="..\src\img\lab8\02.jpg">
+					</br>
+					</br>
+					<p>Код виконання 3 циклів у трьох потоках</p>
+					<img src="..\src\img\lab8\03.jpg">
+					</br>
+					<p>Результат виконання 3 циклів у трьох потоці</p>
+					<img src="..\src\img\lab8\04.jpg">
+					</br>
+				</div>
+				
+                <div id="4" class="item">
+					<p>Код запису і читання з файлу в некотрольованих потоках</p>
+					<img src="..\src\img\lab8\05.jpg">
+					</br>
+					<p>Результат запису і читання з файлу в неконтрольованих потоках</p>
+					<img src="..\src\img\lab8\06.jpg">
+					</br>
+					</br>
+					<p>Код запису і читання з файлів із синхронизованими потоками</p>
+					<img src="..\src\img\lab8\07.jpg">
+					</br>
+					<p>Результат запису і читання з файлів із синхронизованими потоками</p>
+					<img src="..\src\img\lab8\08.jpg">
+					</br>
+				</div>
+				
+				<div id="5" class="item">
+					<p>Код запису і читання з файлу із використанням м'ютексів</p>
+					<img src="..\src\img\lab8\09.jpg">
+					</br>
+					<p>Результат запису і читання з файлу із використанням м'ютексів</p>
+					<img src="..\src\img\lab8\10.jpg">
+					</br>
+				</div>
+				
+				<div id="6" class="item">
+					<p>а) Спробуємо використати семафор, щоб дозволити одночасно виконувати виконання вдох потоків.
+						 Оскільки потоки будуть намагатись одночасно читати і писати із одного файлу - в теорії має виникнути помилка під час виконання.
+					</p>
+					</br>
+
+					<p>Код для одночасного читання двома потоками (семафори)</p>
+					<img src="..\src\img\lab8\05.jpg">
+					</br>
+					<p>Результат одночасного читання двома потоками (семафори)</p>
+					<img src="..\src\img\lab8\06.jpg">
+					</br>
+					</br>
+
+					<p>Як і було передбачено - виникла помилка. 
+						Щоб її не виникало, як перший аргумент в об'єкт семафору передамо одиницю, щоб потоки не намагалися записувати і читати файл одночасно.
+				   </p>
+				   </br>
+
+					<p>Змінений семафор</p>
+					<img src="..\src\img\lab8\07.jpg">
+					</br>
+					<p>Результат повторного виконання програми</p>
+					<img src="..\src\img\lab8\08.jpg">
+					</br>
+				</div>
+				<div id="7" class="item">
+					<p style="padding: 0  0 0 40px;">Проект знаходиться на гітхабі: <a href="https://github.com/invisy/.NET-Labs" style="color: black; text-decoration: underline;">посилання на гітхаб</a></p>
+				</div>
+				<div id="8" class="item">
+					<p style="padding: 0  0 0 40px;">Проект написано з використанням технології .NET 5.</p>
+					<p style="padding: 0  0 0 40px;">Для запуску необхідно скомпілювати проект з github або завантажити вже скомпільоване ПЗ з вкладки Releases проекту на гітхаб.<p>
+				</div>
+				<div id="9" class="item">
+					<p style="padding: 0 40px  0 40px;">
+						Виконуючи дану лабораторну роботу, ми придбати практичні навички роботи з потоками. 
+						Нашою командою були написані усі поставлені задачі. 
+						Крім цього, під час виконання ми виокристовували м'ютекси та семафори для синхронізації потоків.
+					</p>
+				</div>
             </div>
         </div>
 		<div class="footer"></div>
